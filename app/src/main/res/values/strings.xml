@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string-array name="list">
+        <item>1. DIAG</item>
+        <item>2. TMS</item>
+        <item>3. TIME</item>
+        <item>4. UTILS</item>
+        <item>5. QDSS</item>
+    </string-array>
+</resources>
