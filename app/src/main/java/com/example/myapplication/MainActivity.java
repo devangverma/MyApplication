@@ -15,8 +15,6 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
-//package com.example.listview_static2;
-
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -27,14 +25,11 @@ import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity  {
 
-    //private static final String EXTRA_MESSAGE = "TEST";
     public final static String EXTRA_MESSAGE = "com.example.myapplication.MESSAGE";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
     }
 
     public void sendMessage(View view) {
@@ -51,11 +46,5 @@ public class MainActivity extends AppCompatActivity  {
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
-
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.activity_main, menu);
-//        return true;
-//    }
-
 
 }
