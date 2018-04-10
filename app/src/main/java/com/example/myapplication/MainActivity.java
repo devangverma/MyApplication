@@ -13,7 +13,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     public final static String EXTRA_MESSAGE = "com.example.myapplication.MESSAGE";
-    public static final List<String> Services = Arrays.asList("diag", "tms", "time", "utils", "qdss");
+    public static final List<String> Services = Arrays.asList("First App","Second App","Third App","Fourth App","Fifth App");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             //Log.i(message, "message ");
             message = message +" "+Services.get(Integer.parseInt(message) - 1).toUpperCase();
         } else
-            message = "Invalid Input: Please enter 1-5 or test name( DIAG, TMS, TIME, UTILS, QDSS)";
+            message = "Invalid Input: Please enter 1-5 or test name( First App Second App Third App Fourth App Fifth App)";
 
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
